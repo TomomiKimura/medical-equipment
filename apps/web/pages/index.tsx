@@ -4,7 +4,7 @@ export default function Web() {
   return (
     <div>
       <h1>Web</h1>
-      <Button onClick={()=> console.log("I also got clicked!")}>Learn to Buy!</Button>
+      <Button onClick={()=> console.log("I got clicked!")}>Learn to Buy!</Button>
     </div>
   );
 }
