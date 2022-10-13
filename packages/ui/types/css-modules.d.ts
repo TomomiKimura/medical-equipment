@@ -3,6 +3,6 @@
  * extension, it can expect that file to contain a default export of Record
  */
 declare module "*.module.css" {
- const styles: Record<string, string>;
- export default styles;
+  const styles: Record<string, string>;
+  export default styles;
 }

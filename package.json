@@ -1,5 +1,5 @@
 {
-  "name": " medical-equipment",
+  "name": "medical-equipment",
   "version": "0.0.0",
   "private": true,
   "workspaces": [
@@ -9,17 +9,21 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
-    "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "verify:lint": "turbo run lint",
+    "fix:style": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "fix:lint": "turbo run lint --fix",
+    "prepare": "husky install",
+    "pre-commit": "lint-staged"
   },
   "devDependencies": {
     "eslint-config-custom": "*",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
     "prettier": "latest",
     "turbo": "latest"
   },
   "engines": {
     "node": ">=14.0.0"
   },
-  "dependencies": {},
   "packageManager": "npm@8.5.5"
 }
