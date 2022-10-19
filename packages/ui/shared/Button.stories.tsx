@@ -3,25 +3,31 @@ import { Button } from "./Button";
 import { ComponentMeta, ComponentStoryObj } from "@storybook/react";
 
 export default {
-  component: Button,
+    component: Button,
 } as ComponentMeta<typeof Button>;
 
 export const Primary: ComponentStoryObj<typeof Button> = {
-  args: {
-    children: "Click me!",
-    type: "primary",
-  },
+    args: {
+        children: "Click me!",
+        type: "primary",
+    },
 };
 
 export const Secondary: ComponentStoryObj<typeof Button> = {
-  args: {
-    children: "Hello!",
-    type: "secondary",
-  },
+    args: {
+        children: "Hello!",
+        type: "secondary",
+    },
+};
+export const Tertiary: ComponentStoryObj<typeof Button> = {
+    args: {
+        children: "Hello!",
+        type: "tertiary",
+    },
 };
 export const Destructive: ComponentStoryObj<typeof Button> = {
-  args: {
-    children: "Hello!",
-    type: "destructive",
-  },
+    args: {
+        children: "Hello!",
+        type: "destructive",
+    },
 };
