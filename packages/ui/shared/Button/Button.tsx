@@ -6,7 +6,7 @@ import * as React from "react";
 import styles from "./Button.module.css";
 
 export type ButtonProps = {
-    type: "primary" | "secondary" | "tertiary" | "destructive";
+    type: "primary" | "secondary" | "subtle" | "destructive";
     children: string;
     onClick?: () => void;
     disabled?: boolean;

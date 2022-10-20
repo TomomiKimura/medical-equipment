@@ -1,4 +1,4 @@
-import { Button } from "ui/shared/Button";
+import { Button } from "ui/shared/Button/Button";
 
 export default function Docs() {
     return (
@@ -19,7 +19,7 @@ export default function Docs() {
             </Button>
 
             <Button
-                type="tertiary"
+                type="subtle"
                 onClick={() => console.log("I also got clicked!")}
             >
                 request info

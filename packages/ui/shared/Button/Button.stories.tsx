@@ -19,10 +19,10 @@ export const Secondary: ComponentStoryObj<typeof Button> = {
         type: "secondary",
     },
 };
-export const Tertiary: ComponentStoryObj<typeof Button> = {
+export const Subtle: ComponentStoryObj<typeof Button> = {
     args: {
         children: "Hello!",
-        type: "tertiary",
+        type: "subtle",
     },
 };
 export const Destructive: ComponentStoryObj<typeof Button> = {

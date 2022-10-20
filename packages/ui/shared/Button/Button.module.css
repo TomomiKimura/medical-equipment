@@ -28,14 +28,14 @@
   background-color: var(--colors-disabled);
   color: var(--colors-disabled-text);
 }
-.destructive {
-    background-color: var(--colors-error);
-    color: var(--colors-error-text);
+.subtle {
+  background-color: var(--colors-subtle);
+  color: var(--colors-subtle-text);
 }
-.tertiary:hover {
-  background-color: var(--colors-terinary-hover);
+.subtle:hover {
+  background-color: var(--colors-subtle-hover);
 }
-.tertiary:disabled {
+.subtle:disabled {
   background-color: var(--colors-disabled);
   color: var(--colors-disabled-text);
 }
