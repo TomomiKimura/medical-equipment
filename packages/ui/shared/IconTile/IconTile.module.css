@@ -1,0 +1,31 @@
+.iconTile {
+    border: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: var(--radius-m);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 310px;
+    width: 230px;
+    padding: 20px;
+}
+.logo {
+    margin: auto;
+    height: 125px;
+    width: 125px;
+    background-color: var(--colors-primary);
+    font-weight: normal;
+}
+.titleContent {
+    font-weight: normal;
+    padding: var(--space-xl);
+}
+
+.primary {
+    background-color: var(--colors-icontile-primary);
+    color: var(--colors-icontile-text);
+}
+.primary:hover {
+    background-color: var(--colors-icontile-primary-hover);
+}

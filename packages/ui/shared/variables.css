@@ -6,6 +6,15 @@
   --colors-secondary-text: #ffffff;
   --colors-error: #ff0000;
   --colors-error-text: #ffffff;
+    --colors-icontile-primary: #ffffff;
+    --colors-icontile-text: #414042;
+    --colors-icontile-primary-hover: #e7e5ea;
+
+
+    /* FIXME: Review */
+    /* === Sizes === */
+    --size-icon-primary: 310px 230px;
+    --size-icon: 150px 150px;
 
   /* === Border radius === */
   --radius-s: 2px;
@@ -29,3 +38,4 @@
   --font-h5: 18px;
   --font-h6: 14px;
 }
+
