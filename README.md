@@ -44,59 +44,47 @@ Access the services from these URLs:
 ## File structure
 
 ```
-├── .husky                              # husky's configuration file
-    ├── pre-commit                      # Shortcut on terminal for husky
-├── apps                                # Application files
-    ├── [app-name]                      # Admin page application files
-        ├──.next                        # Internal files for NEXT.js (Please don't touch!)
-        ├── pages                       # Component files for admin page
-            ├── _app.tsx                # AdminApp component file
-            ├── index.tsx               # AdminApp component file
-        ├── .eslintrc.js                # TSLint configuration file
-        ├── next.config.js               # Additional NEXT.js configuration files when installed turporepo
-        ├── next-env.d.ts               # Additional NEXT.js configuration files when installed turporepo
-        ├── package.json                # NEXT.js configuration files
-        ├── README.md                   # README file for NEXT.js
-        ├── tsconfig.json                # Typescript compiler configuration file for NEXT.js
-├── node_modules                        # npm dependencies (don't touch them)
-├── packages                            # Configuration files for prettier, tslint, NEXT.js, and React.
-    ├── eslint-config-custom             # Configuration file for customizing eslint
-        ├── index.js
-        ├── package.json                # npm's configuration file for eslint
-    ├── tsconfig                         # Configuration file for customizing typescript complier
-        ├── base.json                   # Configuration file for customizing typescript complier
-        ├── nextjs.json                 # Configuration file for NEXT.js for customizing typescript complier
-        ├── package.json                # npm's configuration file for typescript complier
-        ├── react-library.json         ?# Configuration file for react for typescript complier
-        ├── README.md                   # README file for typescript complier
-    ├──  ui                             # User Interface files for storybook
-        ├── .storybook                  # Configuration files for storybook
-            ├── main.js                 # Configuration files for React for storybook
-            ├── preview.js              # This file tells storybook to make css module available from anywhere.
-        ├── admin
-        ├── node_modules                # npm dependencies for storybook(don't touch them)
-        ├── shared                      # A shared file to be used for both admin app and web app of storybook
-            ├── Button.module.css       # CSS module file for Button component
-            ├── Button.stories.tsx      # File for Button component for storybook
-            ├── Button.tsx              # File for Button component props for storybook
-            ├── variables.css           # CSS variables for Button component
-        ├── types
-            ├── css-modules.d.ts        # This tells TypeScript that any time we import a file that has a .module.css
-                                          extension, it can expect that file to contain a default export of Record
-        ├── web
-        ├── package.json                # npm's configuration file for storybook
-        ├── tsconfig.json                # Typescript compiler configuration file
-├── .editorconfig                        # Editor configuration file
-├── .eslintrc.js                        # TSLint configuration file
+├── .husky                              # husky's configuration files
+    ├── pre-commit                      # Script that husky runs before a git commit is made
+├── apps                                # Directory that contains individual applications
+    ├── [app-name]                      # Directory for the application named "app-name" (e.g. web, admin, etc.)
+        ├──.next                        # Next.js files(DON'T TOUCH!)
+        ├── pages                       # Contains page components for Next.js application
+            ├── _app.tsx                # Customizes Next.js application (e.g. loading global css)
+            ├── index.tsx               # Entry point (starting file) for Next.js
+        ├── .eslintrc.js                # ESLint configuration file for app [app-name]
+        ├── next.config.js               # Next.js configuration file. See: https://nextjs.org/docs/api-reference/next.config.js/introduction
+        ├── next-env.d.ts               # TypeScript definition file (adds types) for Next.js(DON'T TOUCH!)
+        ├── package.json                # Node.js package configuration file for [app-name] (dependencies, scripts, etc.)
+        ├── README.md                   # README.md file for [app-name]
+        ├── tsconfig.json                # Typescript configuration file for [app-name]
+├── node_modules                        # Node.js dependencies (DON'T TOUCH!)
+├── packages                            # Contains all Node.js packages that AREN'T applications (libraries, configuration projects, etc.)
+    ├── eslint-config-custom             # Node.js package that contains shared configuration for ESLint. This can be used by other packages.
+        ├── index.js                    # Entry point of eslint-config-custom
+    ├── tsconfig                         # Node.js package that contains shared configuration for TypeScript. Other packages can use this.
+        ├── base.json                   # Contains general TypeScript configuration
+        ├── nextjs.json                 # Contains Next.js-specific TypeScript configuration
+        ├── react-library.json          # Contains React-specific TypeScript configuration
+    ├──  ui                             # Package that contains the shared UI components that other packages will use (like web, admin, etc.)
+        ├── .storybook                  # Storybook
+            ├── main.js                 # Controls Storybook's server. Plugins, and main configuration is done here.
+            ├── preview.js              # Contains configuration that will affect how ALL stories are rendered (e.g. global css, etc.)
+        ├── admin                       # Admin-specific UI components.
+        ├── shared                      # Shared UI components (both web, admin and maybe other packages use)
+            ├── Button.module.css       # CSS module for Button component
+            ├── Button.stories.tsx      # Stories for Button component
+            ├── Button.tsx              # Button component
+            ├── variables.css           # CSS variables for ALL shared components
+        ├── types                       # Contains definition files for UI package
+            ├── css-modules.d.ts        # Web-specific UI components
+        ├── web                         # Web applications
+├── .editorconfig                        # Configuration file for IDEs that sets things like amount of spaces, space vs tabs, etc... See: https://editorconfig.org/
+├── .eslintrc.js                        # ESLint configuration file for the entire repository (medical-equipment)
 ├── .gitignore                          # Configuration file for git to ignore certain files
-├── .lintstagedrc.json                  # Configuration for prettier to the edited file
-├── .npmrc
-├── .nvmrc                              # This tells which version of node this project uses
-├── package.json                        # npm's configuration file
-├── package-lock.json                   # npm's with the exact desired dependency tree
-├── README.md                           # This file you are reading
-├── turbo.json                          # Configuration file for turborepo
-├── External Libraries
-├── Scratches and Consoles
+├── .lintstagedrc.json                  # Configuration file for lint-staged. lint-staged lints (checks for errors, format, etc.) files that are going to be committed.
+├── .nvmrc                              # Node.js
+├── package.json                        # Node.js package configuration file
+├── package-lock.json                   # npm configuration file that tells npm the exact version of packages that need to be installed (DON'T TOUCH!)
 
 ```
