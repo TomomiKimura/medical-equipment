@@ -1,45 +1,49 @@
 .iconCard {
     background-color: var(--colors-iconcard);
-    color: var(--colors-iconcard-text);
     height: 190px;
     width: 1120px;
     display: flex;
     flex-direction: row;
     padding: 10px;
+    justify-content: space-between;
 }
 .content {
-    color: var(--colors-iconcard-text);
-    /*color: var(--colors-iconcard-text2);*/
     background-color: var(--colors-iconcard);
-    height: 170px;
     width: 340px;
-    justify-content: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-left: 10px;
 }
 
 .logo {
     background-color: var(--colors-iconcard-text);
     height: 50px;
     width: 50px;
-    margin: auto;
     justify-content: center;
+    margin: auto;
     display: flex;
 }
 
 .title {
-    width: 340px;
+    width: 70%;
+    height: 20%;
     font-weight: bold;
     justify-content: center;
     display: flex;
-    padding: 20px;
+    text-align: center;
+    padding-top: 5px;
 }
 
 .description {
-    padding: 10px;
+    padding: 8px;
     display: flex;
     justify-content: center;
-    /*margin: auto;*/
+    text-align: center;
+    width: 80%;
+}
+.light {
+    color: var(--colors-iconcard-text);
+}
+.dark {
+    color: var(--colors-iconcard-text2);
 }
