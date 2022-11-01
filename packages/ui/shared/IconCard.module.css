@@ -1,0 +1,45 @@
+.iconCard {
+    background-color: var(--colors-iconcard);
+    color: var(--colors-iconcard-text);
+    height: 190px;
+    width: 1120px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+.content {
+    color: var(--colors-iconcard-text);
+    /*color: var(--colors-iconcard-text2);*/
+    background-color: var(--colors-iconcard);
+    height: 170px;
+    width: 340px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.logo {
+    background-color: var(--colors-iconcard-text);
+    height: 50px;
+    width: 50px;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+}
+
+.title {
+    width: 340px;
+    font-weight: bold;
+    justify-content: center;
+    display: flex;
+    padding: 20px;
+}
+
+.description {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    /*margin: auto;*/
+}

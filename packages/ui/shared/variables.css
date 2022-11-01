@@ -19,6 +19,17 @@
   --colors-disabled: #e5e6e7;
   --colors-disabled-text: #9ea0a1;
 
+  --colors-icontile-primary: #ffffff;
+  --colors-icontile-text: #414042;
+  --colors-icontile-primary-hover: #e7e5ea;
+  --colors-iconcard-text: #ffffff;
+  --colors-iconcard-text2: #000000;
+  --colors-iconcard: #006eb2;
+
+  /* === Sizes === */
+  --size-icon-primary: 310px 230px;
+  --size-icon: 150px 150px;
+
   /* === Border radius === */
   --radius-s: 2px;
   --radius-m: 4px;
