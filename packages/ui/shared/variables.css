@@ -30,12 +30,13 @@
   --space-xl: 24px;
   --space-xxl: 32px;
 
-  /* === Typography === */
-  --font-h1: 48px;
-  --font-h2: 32px;
-  --font-h3: 28px;
-  --font-h4: 24px;
-  --font-h5: 18px;
-  --font-h6: 14px;
+    /* === Typography === */
+    --font-h1: 48px;
+    --font-h2: 32px;
+    --font-h3: 28px;
+    --font-h4: 24px;
+    --font-h5: 18px;
+    --font-newh5: 16px;
+    --font-h6: 14px;
 }
 

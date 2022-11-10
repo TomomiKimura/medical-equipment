@@ -4,14 +4,25 @@
     text-transform: uppercase;
     border-radius: var(--radius-m);
     display: flex;
-
-    /* Center vertically and horizontally */
+    font-size: var(--font-newh5);
     justify-content: center;
     align-items: center;
-
     height: 310px;
     width: 230px;
     padding: 20px;
+}
+.iconTile:hover {
+    border: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: var(--radius-m);
+    display: flex;
+    font-size: var(--font-newh5);
+    justify-content: center;
+    align-items: center;
+    height: 320px;
+    width: 240px;
+    padding: 30px;
 }
 .logo {
     margin: auto;
@@ -24,10 +35,6 @@
     font-weight: normal;
     padding: var(--space-xl);
 }
-/*.primary {*/
-/*    background-color: var(--colors-icontile-primary);*/
-/*    color: var(--colors-icontile-text);*/
-/*}*/
 .iconTile:hover {
     background-color: var(--colors-icontile-primary-hover);
 }

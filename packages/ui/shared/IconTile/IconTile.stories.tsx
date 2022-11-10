@@ -9,16 +9,24 @@ export const WithDescription: ComponentStoryObj<typeof IconTile> = {
     args: {
         title: "equipment",
         description: "Browse 200+ Systems in Stock",
+        image: {
+            src: "https://via.placeholder.com/125x125/0000FF",
+            alt: "Logo of the equipment",
+        },
     },
 };
 
 export const WithoutDescription: ComponentStoryObj<typeof IconTile> = {
     args: {
         title: "equipment",
+        image: {
+            src: "https://via.placeholder.com/125x125/0000FF",
+            alt: "Logo of the equipment",
+        },
     },
 };
 
-// TODO: Create a component instead
+// TODO: Create a component instead and add logos (together)
 export const TileGrid: ComponentStoryObj<typeof IconTile> = {
     render: () => {
         return (
