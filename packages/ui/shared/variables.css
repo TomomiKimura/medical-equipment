@@ -1,32 +1,31 @@
 :root {
-    /* === Colors === */
-    --colors-primary: #006eb2;
-    --colors-primary-text: #ffffff;
-    --colors-secondary: #fd5000;
-    --colors-secondary-text: #ffffff;
-    --colors-error: #ff0000;
-    --colors-error-text: #ffffff;
+  /* === Colors === */
+  --colors-primary: #006eb2;
+  --colors-primary-text: #ffffff;
+  --colors-secondary: #fd5000;
+  --colors-secondary-text: #ffffff;
+  --colors-error: #ff0000;
+  --colors-error-text: #ffffff;
 
-    /* === Border radius === */
-    --radius-s: 2px;
-    --radius-m: 4px;
-    --radius-l: 6px;
+  /* === Border radius === */
+  --radius-s: 2px;
+  --radius-m: 4px;
+  --radius-l: 6px;
 
+  /* === Spacings === */
+  --space-xxs: 2px;
+  --space-xs: 4px;
+  --space-s: 8px;
+  --space-m: 12px;
+  --space-l: 18px;
+  --space-xl: 24px;
+  --space-xxl: 32px;
 
-    /* === Spacings === */
-    --space-xxs: 2px;
-    --space-xs: 4px;
-    --space-s: 8px;
-    --space-m: 12px;
-    --space-l: 18px;
-    --space-xl: 24px;
-    --space-xxl: 32px;
-
-    /* === Typography === */
-    --font-h1: 48px;
-    --font-h2: 32px;
-    --font-h3: 28px;
-    --font-h4: 24px;
-    --font-h5: 18px;
-    --font-h6: 14px;
+  /* === Typography === */
+  --font-h1: 48px;
+  --font-h2: 32px;
+  --font-h3: 28px;
+  --font-h4: 24px;
+  --font-h5: 18px;
+  --font-h6: 14px;
 }
