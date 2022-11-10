@@ -6,24 +6,24 @@
 
 1. Clone the repository:
 
-    ```sh
-    git clone git@github.com:TomomiKimura/medical-equipment.git
-    cd medical-equipment
-    ```
+   ```sh
+   git clone git@github.com:TomomiKimura/medical-equipment.git
+   cd medical-equipment
+   ```
 
 2. Change to supported version of Node.js
 
-    ```sh
-    nvm use
-    ```
+   ```sh
+   nvm use
+   ```
 
-    > ℹ️ You may need to install the version if isn't in your computer.
+   > ℹ️ You may need to install the version if isn't in your computer.
 
 3. Install dependencies
 
-    ```sh
-    npm install
-    ```
+   ```sh
+   npm install
+   ```
 
 ### How-to
 

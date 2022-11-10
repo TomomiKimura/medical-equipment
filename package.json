@@ -10,7 +10,7 @@
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
     "verify:lint": "turbo run lint",
-    "fix:style": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "fix:style": "prettier --ignore-unknown --write .",
     "fix:lint": "turbo run lint --fix",
     "prepare": "husky install",
     "pre-commit": "lint-staged"
