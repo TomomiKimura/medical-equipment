@@ -1,40 +1,40 @@
 .iconTile {
-    border: 0;
-    font-weight: bold;
-    text-transform: uppercase;
-    border-radius: var(--radius-m);
-    display: flex;
-    font-size: var(--font-newh5);
-    justify-content: center;
-    align-items: center;
-    height: 310px;
-    width: 230px;
-    padding: 20px;
+  border: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: var(--radius-m);
+  display: flex;
+  font-size: var(--font-newh5);
+  justify-content: center;
+  align-items: center;
+  height: 310px;
+  width: 230px;
+  padding: 20px;
 }
 .iconTile:hover {
-    border: 0;
-    font-weight: bold;
-    text-transform: uppercase;
-    border-radius: var(--radius-m);
-    display: flex;
-    font-size: var(--font-newh5);
-    justify-content: center;
-    align-items: center;
-    height: 320px;
-    width: 240px;
-    padding: 30px;
+  border: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: var(--radius-m);
+  display: flex;
+  font-size: var(--font-newh5);
+  justify-content: center;
+  align-items: center;
+  height: 320px;
+  width: 240px;
+  padding: 30px;
 }
 .logo {
-    margin: auto;
-    height: 125px;
-    width: 125px;
-    background-color: var(--colors-primary);
-    font-weight: normal;
+  margin: auto;
+  height: 125px;
+  width: 125px;
+  background-color: var(--colors-primary);
+  font-weight: normal;
 }
 .description {
-    font-weight: normal;
-    padding: var(--space-xl);
+  font-weight: normal;
+  padding: var(--space-xl);
 }
 .iconTile:hover {
-    background-color: var(--colors-icontile-primary-hover);
+  background-color: var(--colors-icontile-primary-hover);
 }
