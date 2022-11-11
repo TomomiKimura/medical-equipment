@@ -49,14 +49,62 @@ export const TileGrid: ComponentStoryObj<typeof IconTile> = {
             justifyContent: "center",
           }}
         >
-          <IconTile title="equipment" />
-          <IconTile title="mobile" />
-          <IconTile title="parts" />
-          <IconTile title="service" />
-          <IconTile title="equipment" />
-          <IconTile title="mobile" />
-          <IconTile title="parts" />
-          <IconTile title="service" />
+          <IconTile
+            title="equipment"
+            image={{
+              src: "https://via.placeholder.com/125x125/0000FF",
+              alt: "Icon",
+            }}
+          />
+          <IconTile
+            title="mobile"
+            image={{
+              src: "https://via.placeholder.com/125x125/0000FF",
+              alt: "Icon",
+            }}
+          />
+          <IconTile
+            title="parts"
+            image={{
+              src: "https://via.placeholder.com/125x125/0000FF",
+              alt: "Icon",
+            }}
+          />
+          <IconTile
+            title="service"
+            image={{
+              src: "https://via.placeholder.com/125x125/0000FF",
+              alt: "Icon",
+            }}
+          />
+          <IconTile
+            title="equipment"
+            image={{
+              src: "https://via.placeholder.com/125x125/0000FF",
+              alt: "Icon",
+            }}
+          />
+          <IconTile
+            title="mobile"
+            image={{
+              src: "https://via.placeholder.com/125x125/0000FF",
+              alt: "Icon",
+            }}
+          />
+          <IconTile
+            title="parts"
+            image={{
+              src: "https://via.placeholder.com/125x125/0000FF",
+              alt: "Icon",
+            }}
+          />
+          <IconTile
+            title="service"
+            image={{
+              src: "https://via.placeholder.com/125x125/0000FF",
+              alt: "Icon",
+            }}
+          />
         </div>
       </div>
     );
@@ -90,14 +138,62 @@ export const TileGridMobile: ComponentStoryObj<typeof IconTile> = {
             justifyContent: "center",
           }}
         >
-          <IconTile title="equipment" />
-          <IconTile title="mobile" />
-          <IconTile title="parts" />
-          <IconTile title="service" />
-          <IconTile title="equipment" />
-          <IconTile title="mobile" />
-          <IconTile title="parts" />
-          <IconTile title="service" />
+          <IconTile
+            title="equipment"
+            image={{
+              src: "https://via.placeholder.com/125x125/0000FF",
+              alt: "Icon",
+            }}
+          />
+          <IconTile
+            title="mobile"
+            image={{
+              src: "https://via.placeholder.com/125x125/0000FF",
+              alt: "Icon",
+            }}
+          />
+          <IconTile
+            title="parts"
+            image={{
+              src: "https://via.placeholder.com/125x125/0000FF",
+              alt: "Icon",
+            }}
+          />
+          <IconTile
+            title="service"
+            image={{
+              src: "https://via.placeholder.com/125x125/0000FF",
+              alt: "Icon",
+            }}
+          />
+          <IconTile
+            title="equipment"
+            image={{
+              src: "https://via.placeholder.com/125x125/0000FF",
+              alt: "Icon",
+            }}
+          />
+          <IconTile
+            title="mobile"
+            image={{
+              src: "https://via.placeholder.com/125x125/0000FF",
+              alt: "Icon",
+            }}
+          />
+          <IconTile
+            title="parts"
+            image={{
+              src: "https://via.placeholder.com/125x125/0000FF",
+              alt: "Icon",
+            }}
+          />
+          <IconTile
+            title="service"
+            image={{
+              src: "https://via.placeholder.com/125x125/0000FF",
+              alt: "Icon",
+            }}
+          />
         </div>
       </div>
     );
