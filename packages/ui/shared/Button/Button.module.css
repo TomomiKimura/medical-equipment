@@ -1,14 +1,14 @@
 .button {
-    border: 0;
-    padding: var(--space-s) var(--space-l);
-    font-size: var(--font-h6);
-    font-weight: bold;
-    text-transform: uppercase;
-    border-radius: var(--radius-m);
+  border: 0;
+  padding: var(--space-s) var(--space-l);
+  font-size: var(--font-h6);
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: var(--radius-m);
 }
 .primary {
-    background-color: var(--colors-primary);
-    color: var(--colors-primary-text);
+  background-color: var(--colors-primary);
+  color: var(--colors-primary-text);
 }
 .primary:hover {
   background-color: var(--colors-primary-hover);
@@ -18,8 +18,8 @@
   color: var(--colors-disabled-text);
 }
 .secondary {
-    background-color: var(--colors-secondary);
-    color: var(--colors-secondary-text);
+  background-color: var(--colors-secondary);
+  color: var(--colors-secondary-text);
 }
 .secondary:hover {
   background-color: var(--colors-secondary-hover);

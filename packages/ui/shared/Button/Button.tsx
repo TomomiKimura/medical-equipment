@@ -6,27 +6,18 @@ import * as React from "react";
 import styles from "./Button.module.css";
 
 export type ButtonProps = {
-    type: "primary" | "secondary" | "subtle" | "destructive";
-    children: string;
-    onClick?: () => void;
-    disabled?: boolean;
+  type: "primary" | "secondary" | "subtle" | "destructive";
+  children: string;
+  onClick?: () => void;
+  disabled?: boolean;
 };
 
-export const Button: React.FC<ButtonProps> = ({
-    children,
-    onClick,
-    type,
-    disabled,
-}) => {
-    const typeClass = styles[type];
+export const Button: React.FC<ButtonProps> = ({ children, onClick, type, disabled }) => {
+  const typeClass = styles[type];
 
-    return (
-        <button
-            className={`${styles.button} ${typeClass}`}
-            onClick={onClick}
-            disabled={disabled}
-        >
-            {children}
-        </button>
-    );
+  return (
+    <button className={`${styles.button} ${typeClass}`} onClick={onClick} disabled={disabled}>
+      {children}
+    </button>
+  );
 };
