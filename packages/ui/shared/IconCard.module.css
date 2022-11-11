@@ -1,49 +1,49 @@
 .iconCard {
-    background-color: var(--colors-iconcard);
-    height: 190px;
-    width: 1120px;
-    display: flex;
-    flex-direction: row;
-    padding: 10px;
-    justify-content: space-between;
+  background-color: var(--colors-iconcard);
+  height: 190px;
+  width: 1120px;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  justify-content: space-between;
 }
 .content {
-    background-color: var(--colors-iconcard);
-    width: 340px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  background-color: var(--colors-iconcard);
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .logo {
-    background-color: var(--colors-iconcard-text);
-    height: 50px;
-    width: 50px;
-    justify-content: center;
-    margin: auto;
-    display: flex;
+  background-color: var(--colors-iconcard-text);
+  height: 50px;
+  width: 50px;
+  justify-content: center;
+  margin: auto;
+  display: flex;
 }
 
 .title {
-    width: 70%;
-    height: 20%;
-    font-weight: bold;
-    justify-content: center;
-    display: flex;
-    text-align: center;
-    padding-top: 5px;
+  width: 70%;
+  height: 20%;
+  font-weight: bold;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  padding-top: 5px;
 }
 
 .description {
-    padding: 8px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    width: 80%;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 80%;
 }
 .light {
-    color: var(--colors-iconcard-text);
+  color: var(--colors-iconcard-text);
 }
 .dark {
-    color: var(--colors-iconcard-text2);
+  color: var(--colors-iconcard-text2);
 }
