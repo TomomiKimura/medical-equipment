@@ -12,14 +12,6 @@
   padding: 20px;
 }
 .iconTile:hover {
-  border: 0;
-  font-weight: bold;
-  text-transform: uppercase;
-  border-radius: var(--radius-m);
-  display: flex;
-  font-size: var(--font-newh5);
-  justify-content: center;
-  align-items: center;
   height: 320px;
   width: 240px;
   padding: 30px;

@@ -19,7 +19,7 @@ export const IconTile: React.FC<IconTileProps> = ({ title, description, onClick,
         <img className={styles.logo} width="125" height="125" alt={image.alt} src={image.src} />
         <div className={styles.titleContent}>
           <h2>{title}</h2>
-          {description !== undefined ? description : null}
+          {description !== undefined && <p>{description}</p>}
         </div>
       </div>
     </button>
