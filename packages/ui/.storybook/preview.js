@@ -1,5 +1,4 @@
-// Its saying that to storybook to make css module available from anywhere.
-import "ui/shared/variables.css";
+import "ui/shared/global-imports";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
