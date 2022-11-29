@@ -27,6 +27,12 @@
 
 ### How-to
 
+#### ...fix "Port XXXX is already in use." error
+
+```sh
+./scripts/kill-servers.sh
+```
+
 #### ...run the projects in dev mode
 
 ```sh
