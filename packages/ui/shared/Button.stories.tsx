@@ -1,6 +1,7 @@
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 import { Button } from "./Button";
 import { ComponentMeta, ComponentStoryObj } from "@storybook/react";
+import "./global-imports";
 
 export default {
   component: Button,
@@ -23,5 +24,21 @@ export const Destructive: ComponentStoryObj<typeof Button> = {
   args: {
     children: "Hello!",
     type: "destructive",
+  },
+};
+
+export const WithIcon1: ComponentStoryObj<typeof Button> = {
+  args: {
+    children: "Hello!",
+    type: "destructive",
+    icon: "emoji-smile",
+  },
+};
+
+export const WithIcon2: ComponentStoryObj<typeof Button> = {
+  args: {
+    children: "Hello!",
+    type: "destructive",
+    icon: "emoji-frown",
   },
 };
