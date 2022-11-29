@@ -13,33 +13,20 @@ export type ButtonProps = {
   icon?: string;
 };
 
-// FIXME: Show proper icon passed down as prop (smile/frown)
-// FIXME: Hide icon when no icon is passed
-// FIXME: Fix style, alignment and spacing
+// DONE: Show proper icon passed down as prop (smile/frown)
+// DONE: Hide icon when no icon is passed
+// DONE: Fix style, alignment and spacing
+// FIXME: Allow icon on the right and on the left or both or none
+// FIXME: Make text optional
 export const Button: React.FC<ButtonProps> = ({ children, onClick, type, icon }) => {
   const typeClass = styles[type];
 
-  // FIXME: It shows actual string in a place where icon should be displayed right now. That means icon should be boostrap hasn't been properly connected to the value to stories yet?
   return (
     <button className={`${styles.button} ${typeClass}`} onClick={onClick}>
       {children}
-      <i className="bi bi-emoji-smile"></i>
-      {/*<i className={icon}></i>*/}
-      {/*{icon === undefined ? undefined: <i className={icon}></i>}*/}
+      {icon !== undefined ? <i className={`bi bi-${icon}`}></i> : undefined}
     </button>
   );
 };
 
-// FIXME: Remove
-// const Screen = () => {
-//   return (
-//     <>
-//       <Button type="primary" onClick={() => {}} icon={<i className="bi bi-circle-square"></i>}>
-//         Ok
-//       </Button>
-//       <Button type="primary" onClick={() => {}} icon="emoji-frown">
-//         Cancel
-//       </Button>
-//     </>
-//   );
-// };
+// <name attributes1="string values" attribute2={dynamicValues} attribute3={12} isValid></name>
