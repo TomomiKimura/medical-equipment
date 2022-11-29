@@ -42,3 +42,11 @@ export const WithIcon2: ComponentStoryObj<typeof Button> = {
     icon: "emoji-frown",
   },
 };
+
+export const WithoutIcon: ComponentStoryObj<typeof Button> = {
+  args: {
+    children: "Hello!",
+    type: "destructive",
+    icon: undefined,
+  },
+};
