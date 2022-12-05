@@ -25,5 +25,3 @@ export const Button: React.FC<ButtonProps> = ({ children, onClick, type, iconLef
     </button>
   );
 };
-
-// <name attributes1="string values" attribute2={dynamicValues} attribute3={12} isValid></name>

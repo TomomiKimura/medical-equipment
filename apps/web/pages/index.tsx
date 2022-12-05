@@ -8,8 +8,6 @@ export default function Web() {
       <Button type="primary" onClick={() => console.log("I got clicked!")}>
         Learn to Buy!
       </Button>
-      <i className="bi bi-chevron-double-left"></i>
-      <i className="bi bi-chevron-double-right"></i>
     </div>
   );
 }
