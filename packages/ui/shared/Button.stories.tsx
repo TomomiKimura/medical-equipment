@@ -31,7 +31,7 @@ export const WithIcon1: ComponentStoryObj<typeof Button> = {
   args: {
     children: "Hello!",
     type: "destructive",
-    icon: "emoji-smile",
+    iconRight: "emoji-smile",
   },
 };
 
@@ -39,14 +39,39 @@ export const WithIcon2: ComponentStoryObj<typeof Button> = {
   args: {
     children: "Hello!",
     type: "destructive",
-    icon: "emoji-frown",
+    iconRight: "emoji-frown",
   },
 };
 
-export const WithoutIcon: ComponentStoryObj<typeof Button> = {
+export const NoIcon: ComponentStoryObj<typeof Button> = {
   args: {
     children: "Hello!",
     type: "destructive",
-    icon: undefined,
+  },
+};
+
+export const iconOnTheLeft: ComponentStoryObj<typeof Button> = {
+  args: {
+    children: "Hello!",
+    type: "destructive",
+    iconLeft: "chevron-double-left",
+  },
+};
+
+export const iconOnTheRight: ComponentStoryObj<typeof Button> = {
+  args: {
+    children: "Hello!",
+    type: "destructive",
+    iconRight: "chevron-double-right",
+  },
+};
+
+export const iconOnTheBoth: ComponentStoryObj<typeof Button> = {
+  args: {
+    children: "Hello!",
+    type: "destructive",
+    // FIXME: Check if I need to use "chevron-double-left" on the right side(means 2 icons)
+    iconLeft: "chevron-double-left",
+    iconRight: "chevron-double-right",
   },
 };

@@ -25,3 +25,9 @@
   background-color: var(--colors-error);
   color: var(--colors-error-text);
 }
+.iconLeft {
+  order: -1;
+}
+.iconRight {
+  order: 1;
+}
