@@ -70,8 +70,16 @@ export const iconOnTheBoth: ComponentStoryObj<typeof Button> = {
   args: {
     children: "Hello!",
     type: "destructive",
-    // FIXME: Check if I need to use "chevron-double-left" on the right side(means 2 icons)
     iconLeft: "chevron-double-left",
     iconRight: "chevron-double-right",
+  },
+};
+
+export const noTextNoIcon: ComponentStoryObj<typeof Button> = {
+  args: {
+    children: undefined,
+    type: "destructive",
+    iconLeft: undefined,
+    iconRight: undefined,
   },
 };
