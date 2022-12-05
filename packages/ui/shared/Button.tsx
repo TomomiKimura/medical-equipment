@@ -8,24 +8,19 @@ import "./global-imports";
 
 export type ButtonProps = {
   type: "primary" | "secondary" | "destructive";
-  children: string;
+  children?: string;
   onClick?: () => void;
   iconLeft?: string;
   iconRight?: string;
 };
 
-// DONE: Show proper icon passed down as prop (smile/frown)
-// DONE: Hide icon when no icon is passed
-// DONE: Fix style, alignment and spacing
-// FIXME: Allow icon on the right and on the left or both or none
-// FIXME: Make text optional
 export const Button: React.FC<ButtonProps> = ({ children, onClick, type, iconLeft, iconRight }) => {
   const typeClass = styles[type];
 
   return (
     <button className={`${styles.button} ${typeClass}`} onClick={onClick}>
       {<i className={`bi bi-${iconLeft}`}></i>}
-      {children}
+      {children !== undefined ? children : undefined}
       {<i className={`bi bi-${iconRight}`}></i>}
     </button>
   );
