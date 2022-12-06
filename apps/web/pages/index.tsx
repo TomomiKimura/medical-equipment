@@ -1,4 +1,5 @@
 import { Button } from "ui/shared/Button/Button";
+import React from "react";
 
 export default function Web() {
   return (
