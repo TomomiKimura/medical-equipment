@@ -1,4 +1,5 @@
 :root {
+  /* TODO: Restructure colors so that component-specific colors aren't mixed with general colors */
   /* === Colors === */
   --colors-primary: #006eb2;
   --colors-primary-text: #ffffff;

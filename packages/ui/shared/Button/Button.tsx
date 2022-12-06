@@ -12,6 +12,7 @@ export type ButtonProps = {
   disabled?: boolean;
 };
 
+// TODO: Expose HTML <button> props as well
 export const Button: React.FC<ButtonProps> = ({ children, onClick, type, disabled }) => {
   const typeClass = styles[type];
 
