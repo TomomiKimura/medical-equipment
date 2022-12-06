@@ -6,17 +6,18 @@ import * as React from "react";
 import styles from "./Button.module.css";
 
 export type ButtonProps = {
-  type: "primary" | "secondary" | "destructive";
+  type: "primary" | "secondary" | "subtle" | "destructive";
   children: string;
   onClick?: () => void;
+  disabled?: boolean;
 };
 
-export const Button: React.FC<ButtonProps> = ({ children, onClick, type }) => {
+// TODO: Expose HTML <button> props as well
+export const Button: React.FC<ButtonProps> = ({ children, onClick, type, disabled }) => {
   const typeClass = styles[type];
 
-  // <button class= "button primary">
   return (
-    <button className={`${styles.button} ${typeClass}`} onClick={onClick}>
+    <button className={`${styles.button} ${typeClass}`} onClick={onClick} disabled={disabled}>
       {children}
     </button>
   );
