@@ -7,18 +7,20 @@ import styles from "./Button.module.css";
 import "./global-imports";
 
 export type ButtonProps = {
-  type: "primary" | "secondary" | "destructive";
+  type: "primary" | "secondary" | "subtle" | "destructive";
   children?: string;
   onClick?: () => void;
+  disabled?: boolean;
   iconLeft?: string;
   iconRight?: string;
 };
 
-export const Button: React.FC<ButtonProps> = ({ children, onClick, type, iconLeft, iconRight }) => {
+// TODO: Expose HTML <button> props as well
+export const Button: React.FC<ButtonProps> = ({ children, onClick, type, disabled, iconLeft, iconRight }) => {
   const typeClass = styles[type];
 
   return (
-    <button className={`${styles.button} ${typeClass}`} onClick={onClick}>
+    <button className={`${styles.button} ${typeClass}`} onClick={onClick} disabled={disabled}>
       {<i className={`bi bi-${iconLeft}`}></i>}
       {children !== undefined ? children : undefined}
       {<i className={`bi bi-${iconRight}`}></i>}

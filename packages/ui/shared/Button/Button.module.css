@@ -1,0 +1,52 @@
+.button {
+  border: 0;
+  padding: var(--space-s) var(--space-l);
+  font-size: var(--font-h6);
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: var(--radius-m);
+}
+.primary {
+  background-color: var(--colors-primary);
+  color: var(--colors-primary-text);
+}
+.primary:hover {
+  background-color: var(--colors-primary-hover);
+}
+.primary:disabled {
+  background-color: var(--colors-disabled);
+  color: var(--colors-disabled-text);
+}
+.secondary {
+  background-color: var(--colors-secondary);
+  color: var(--colors-secondary-text);
+}
+.secondary:hover {
+  background-color: var(--colors-secondary-hover);
+}
+.secondary:disabled {
+  background-color: var(--colors-disabled);
+  color: var(--colors-disabled-text);
+}
+.subtle {
+  background-color: var(--colors-subtle);
+  color: var(--colors-subtle-text);
+}
+.subtle:hover {
+  background-color: var(--colors-subtle-hover);
+}
+.subtle:disabled {
+  background-color: var(--colors-disabled);
+  color: var(--colors-disabled-text);
+}
+.destructive {
+  background-color: var(--colors-error);
+  color: var(--colors-error-text);
+}
+.destructive:hover {
+  background-color: var(--colors-error-hover);
+}
+.destructive:disabled {
+  background-color: var(--colors-disabled);
+  color: var(--colors-disabled-text);
+}
