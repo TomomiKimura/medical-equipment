@@ -4,7 +4,7 @@ import * as React from "react";
 // You need to import file from a file, in this case, Button.module.css. Since we don't know the final name of button, you cannot use just className="button". it should be dynamic {styles.button}
 // So it's creating a variable and passing as a variable {styles.button}
 import styles from "./Button.module.css";
-import "./global-imports";
+import "./../global-imports";
 
 export type ButtonProps = {
   type: "primary" | "secondary" | "subtle" | "destructive";
@@ -21,9 +21,9 @@ export const Button: React.FC<ButtonProps> = ({ children, onClick, type, disable
 
   return (
     <button className={`${styles.button} ${typeClass}`} onClick={onClick} disabled={disabled}>
-      {<i className={`bi bi-${iconLeft}`}></i>}
+      {iconLeft !== undefined && <i className={`bi bi-${iconLeft}`}></i>}
       {children !== undefined ? children : undefined}
-      {<i className={`bi bi-${iconRight}`}></i>}
+      {iconRight !== undefined && <i className={`bi bi-${iconRight}`}></i>}
     </button>
   );
 };
