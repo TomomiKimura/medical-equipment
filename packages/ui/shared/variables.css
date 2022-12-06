@@ -1,11 +1,24 @@
 :root {
+  /* TODO: Restructure colors so that component-specific colors aren't mixed with general colors */
   /* === Colors === */
   --colors-primary: #006eb2;
   --colors-primary-text: #ffffff;
+  --colors-primary-hover: #015986;
   --colors-secondary: #fd5000;
   --colors-secondary-text: #ffffff;
+  --colors-secondary-hover: #ba3d07;
+  --colors-subtle: #f0efee;
+  --colors-subtle-text: #444444;
+  --colors-subtle-hover: #d9d3d3;
+  --colors-tertinary: #f0efee;
+  --colors-tertinary-text: #444444;
+  --colors-terinary-hover: #d9d3d3;
   --colors-error: #ff0000;
   --colors-error-text: #ffffff;
+  --colors-error-hover: #b40708;
+  --colors-disabled: #e5e6e7;
+  --colors-disabled-text: #9ea0a1;
+
   --colors-icontile-primary: #ffffff;
   --colors-icontile-text: #414042;
   --colors-icontile-primary-hover: #e7e5ea;

@@ -1,8 +1,7 @@
 import React from "react";
 import { AppProps } from "next/app";
 
-// Add here all global stylesheets
-import "ui/shared/variables.css";
+import "ui/shared/global-imports";
 
 export const AdminApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   return <Component {...pageProps} />;
