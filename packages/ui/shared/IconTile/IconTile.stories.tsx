@@ -1,11 +1,12 @@
 import { IconTile } from "./IconTile";
 import { ComponentMeta, ComponentStoryObj } from "@storybook/react";
+import "./../global-imports";
 
 export default {
   component: IconTile,
 } as ComponentMeta<typeof IconTile>;
 
-export const WithDescription: ComponentStoryObj<typeof IconTile> = {
+export const WithImageAndDescription: ComponentStoryObj<typeof IconTile> = {
   args: {
     title: "equipment",
     description: "Browse 200+ Systems in Stock",
@@ -16,13 +17,26 @@ export const WithDescription: ComponentStoryObj<typeof IconTile> = {
   },
 };
 
-export const WithoutDescription: ComponentStoryObj<typeof IconTile> = {
+export const WithImageWithoutDescription: ComponentStoryObj<typeof IconTile> = {
   args: {
     title: "equipment",
     image: {
       src: "https://via.placeholder.com/125x125/0000FF",
       alt: "Logo of the equipment",
     },
+  },
+};
+
+export const WithIconAndDescription: ComponentStoryObj<typeof IconTile> = {
+  args: {
+    image: "bi bi-briefcase",
+    description: "Browse 200+ Systems in Stock",
+  },
+};
+
+export const WithIconWithoutDescription: ComponentStoryObj<typeof IconTile> = {
+  args: {
+    image: "bi bi-briefcase",
   },
 };
 

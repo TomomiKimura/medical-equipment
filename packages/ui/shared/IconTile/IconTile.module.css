@@ -16,11 +16,10 @@
   width: 240px;
   padding: 30px;
 }
-.logo {
+.image {
   margin: auto;
-  height: 125px;
-  width: 125px;
-  background-color: var(--colors-primary);
+  height: 100%;
+  width: 100%;
   font-weight: normal;
 }
 .description {
