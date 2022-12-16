@@ -1,10 +1,9 @@
 import * as React from "react";
-import "./global-imports";
 
 export type IconProps = {
-  icon: string;
+  name: string;
 };
 
-export const Icon: React.FC<IconProps> = ({ icon }) => {
-  return <i className={`bi bi-${icon}`}></i>;
+export const Icon: React.FC<IconProps> = ({ name }) => {
+  return <i className={`bi bi-${name}`}></i>;
 };

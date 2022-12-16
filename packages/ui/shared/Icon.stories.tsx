@@ -1,6 +1,5 @@
 import { Icon } from "./Icon";
 import { ComponentMeta, ComponentStoryObj } from "@storybook/react";
-import "./global-imports";
 
 export default {
   component: Icon,
