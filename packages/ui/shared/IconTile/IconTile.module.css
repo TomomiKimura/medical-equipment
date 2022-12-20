@@ -12,9 +12,8 @@
   padding: 20px;
 }
 .iconTile:hover {
-  height: 320px;
-  width: 240px;
-  padding: 30px;
+  /* TODO: change it so that it grows without altering the layout */
+  background-color: var(--colors-icontile-primary-hover);
 }
 .image {
   margin: auto;
@@ -26,7 +25,4 @@
 .description {
   font-weight: normal;
   padding: var(--space-xl);
-}
-.iconTile:hover {
-  background-color: var(--colors-icontile-primary-hover);
 }
