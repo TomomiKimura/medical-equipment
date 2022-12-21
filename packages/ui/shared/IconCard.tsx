@@ -2,7 +2,7 @@ import * as React from "react";
 import { ReactNode } from "react";
 
 import styles from "./IconCard.module.css";
-import { Icon } from "./Icon";
+import { Icon, IconProps } from "./Icon";
 
 // FIXME: Merge IconTile component or add type BoostrapIconName to Icon component so that I can use type BoostrapIconName(*check IconTile compoment)
 
@@ -14,8 +14,7 @@ export type IconCardProps = {
         alt: string;
         src: string;
       }
-    // FIXME: Change type string to BoostrapIconName
-    | string;
+    | IconProps["name"];
   description: string;
 };
 
