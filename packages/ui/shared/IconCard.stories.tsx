@@ -5,10 +5,10 @@ export default {
   component: IconCard,
 } as ComponentMeta<typeof IconCard>;
 
-export const WithDescriptionLight: ComponentStoryObj<typeof IconCard> = {
+export const ImageWithDescription: ComponentStoryObj<typeof IconCard> = {
   args: {
     theme: "light",
-    logo: {
+    image: {
       alt: "Discovery logo",
       src: "https://via.placeholder.com/50x50/FFFFFF",
     },
@@ -16,10 +16,10 @@ export const WithDescriptionLight: ComponentStoryObj<typeof IconCard> = {
     description: "Visit the learning center to access buyer’s guides, project checklists, and pricing guides.",
   },
 };
-export const WithDescriptionDark: ComponentStoryObj<typeof IconCard> = {
+export const ImageWithDescriptionDark: ComponentStoryObj<typeof IconCard> = {
   args: {
     theme: "dark",
-    logo: {
+    image: {
       alt: "Discovery logo",
       src: "https://via.placeholder.com/50x50/000000",
     },
@@ -29,23 +29,30 @@ export const WithDescriptionDark: ComponentStoryObj<typeof IconCard> = {
   },
 };
 
-export const WithoutDescriptionLight: ComponentStoryObj<typeof IconCard> = {
+export const ImageWithoutDescriptionLight: ComponentStoryObj<typeof IconCard> = {
   args: {
     theme: "light",
-    logo: {
+    image: {
       alt: "Discovery logo",
       src: "https://via.placeholder.com/50x50/FFFFFF",
     },
     title: "DISCOVER",
   },
 };
-export const WithoutDescriptionDark: ComponentStoryObj<typeof IconCard> = {
+export const ImageWithoutDescriptionDark: ComponentStoryObj<typeof IconCard> = {
   args: {
     theme: "dark",
-    logo: {
+    image: {
       alt: "Discovery logo",
       src: "https://via.placeholder.com/50x50/000000",
     },
+    title: "PROJECT COORDINATION FROM START TO FINISH",
+  },
+};
+export const IconWithDescription: ComponentStoryObj<typeof IconCard> = {
+  args: {
+    theme: "light",
+    image: "chevron-double-left",
     title: "PROJECT COORDINATION FROM START TO FINISH",
   },
 };
