@@ -6,7 +6,26 @@ export default {
   component: IconTile,
 } as ComponentMeta<typeof IconTile>;
 
-export const WithImageAndDescription: ComponentStoryObj<typeof IconTile> = {
+export const WithImage: ComponentStoryObj<typeof IconTile> = {
+  args: {
+    image: {
+      src: "https://via.placeholder.com/125x125/0000FF",
+      alt: "Logo of the equipment",
+    },
+  },
+};
+
+export const WithImageAndTitle: ComponentStoryObj<typeof IconTile> = {
+  args: {
+    title: "equipment",
+    image: {
+      src: "https://via.placeholder.com/125x125/0000FF",
+      alt: "Logo of the equipment",
+    },
+  },
+};
+
+export const WithImageAndTitleAndDescription: ComponentStoryObj<typeof IconTile> = {
   args: {
     title: "equipment",
     description: "Browse 200+ Systems in Stock",
@@ -17,26 +36,62 @@ export const WithImageAndDescription: ComponentStoryObj<typeof IconTile> = {
   },
 };
 
-export const WithImageWithoutDescription: ComponentStoryObj<typeof IconTile> = {
+export const WithLargeImage: ComponentStoryObj<typeof IconTile> = {
   args: {
     title: "equipment",
+    description: "Browse 200+ Systems in Stock",
     image: {
-      src: "https://via.placeholder.com/125x125/0000FF",
+      src: "https://via.placeholder.com/800x800/0000FF",
       alt: "Logo of the equipment",
     },
+  },
+};
+export const WithLongImage: ComponentStoryObj<typeof IconTile> = {
+  args: {
+    title: "equipment",
+    description: "Browse 200+ Systems in Stock",
+    image: {
+      src: "https://via.placeholder.com/400x100/0000FF",
+      alt: "Logo of the equipment",
+    },
+  },
+};
+export const WithTallImage: ComponentStoryObj<typeof IconTile> = {
+  args: {
+    title: "equipment",
+    description: "Browse 200+ Systems in Stock",
+    image: {
+      src: "https://via.placeholder.com/100x400/0000FF",
+      alt: "Logo of the equipment",
+    },
+  },
+};
+
+export const WithIcon: ComponentStoryObj<typeof IconTile> = {
+  args: {
+    image: "briefcase",
+  },
+};
+
+export const WithIconAndTitle: ComponentStoryObj<typeof IconTile> = {
+  args: {
+    image: "briefcase",
+    title: "Equipment",
   },
 };
 
 export const WithIconAndDescription: ComponentStoryObj<typeof IconTile> = {
   args: {
-    image: "bi bi-briefcase",
+    image: "briefcase",
     description: "Browse 200+ Systems in Stock",
   },
 };
 
-export const WithIconWithoutDescription: ComponentStoryObj<typeof IconTile> = {
+export const WithIconAndTitleAndDescription: ComponentStoryObj<typeof IconTile> = {
   args: {
-    image: "bi bi-briefcase",
+    image: "briefcase",
+    title: "Equipment",
+    description: "Browse 200+ Systems in Stock",
   },
 };
 

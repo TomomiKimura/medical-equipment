@@ -7,6 +7,9 @@ import styles from "./IconTile.module.css";
 export type IconTileProps = {
   title: string;
   description?: string;
+  /**
+   * This prop can receive either an image (providing an object with a src/alt) or an icon (providing a BootstrapIconName)
+   */
   image?:
     | {
         src: string;
@@ -17,24 +20,32 @@ export type IconTileProps = {
   onClick?: () => void;
 };
 
+// TODO: Support different sizes (height and width)
+// TODO: Support non-squared images
 export const IconTile: React.FC<IconTileProps> = ({ title, description, onClick, image }) => {
   let imageContent: ReactNode = undefined;
   if (typeof image === "string") {
-    imageContent = <Icon name={image}></Icon>;
+    imageContent = (
+      <div className={styles.icon}>
+        <Icon name={image}></Icon>
+      </div>
+    );
   } else if (typeof image === "object") {
     // TODO: Change this to Next.js's Image component
-    imageContent = <img className={styles.logo} width="125" height="125" alt={image.alt} src={image.src} />;
+    imageContent = (
+      <div className={styles.image}>
+        <img className={styles.logo} width="125" height="125" alt={image.alt} src={image.src} />
+      </div>
+    );
   }
 
   return (
-    <button className={styles.iconTile} onClick={onClick}>
-      <div>
-        <div className={styles.image}>{imageContent}</div>
-        <div className={styles.titleContent}>
-          <h2>{title}</h2>
-          {description !== undefined && <p>{description}</p>}
-        </div>
+    <div className={styles.iconTile} onClick={onClick}>
+      <div className={styles.imageContainer}>{imageContent}</div>
+      <div className={styles.textContainer}>
+        <h2 className={styles.title}>{title}</h2>
+        {description !== undefined && <p className={styles.description}>{description}</p>}
       </div>
-    </button>
+    </div>
   );
 };

@@ -1,28 +1,47 @@
 .iconTile {
-  border: 0;
-  font-weight: bold;
-  text-transform: uppercase;
   border-radius: var(--radius-m);
+
   display: flex;
-  font-size: var(--font-newh5);
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: var(--space-xl);
+
   height: 310px;
   width: 230px;
   padding: 20px;
+
+  cursor: pointer;
+
+  /* TODO: Move this into the design system and standardize it */
+  box-shadow: 0 0 15px 0 #ddd;
 }
 .iconTile:hover {
   /* TODO: change it so that it grows without altering the layout */
-  background-color: var(--colors-icontile-primary-hover);
+  box-shadow: 0 0 15px 0 #ccc;
+}
+.imageContainer {
+  height: 125px;
+  width: 125px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .image {
-  margin: auto;
-  height: 100%;
-  width: 100%;
-  font-weight: normal;
+}
+.icon {
   font-size: 86px;
 }
+.textContainer {
+  text-align: center;
+}
+.title {
+  font-size: var(--font-h3);
+  font-weight: bold;
+  text-transform: uppercase;
+}
 .description {
-  font-weight: normal;
-  padding: var(--space-xl);
+  margin-top: var(--space-m);
+  text-transform: uppercase;
 }
