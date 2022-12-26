@@ -20,8 +20,6 @@ export type IconTileProps = {
   onClick?: () => void;
 };
 
-// TODO: Support different sizes (height and width)
-// TODO: Support non-squared images
 export const IconTile: React.FC<IconTileProps> = ({ title, description, onClick, image }) => {
   let imageContent: ReactNode = undefined;
   if (typeof image === "string") {
@@ -34,7 +32,7 @@ export const IconTile: React.FC<IconTileProps> = ({ title, description, onClick,
     // TODO: Change this to Next.js's Image component
     imageContent = (
       <div className={styles.image}>
-        <img className={styles.logo} width="125" height="125" alt={image.alt} src={image.src} />
+        <img className={styles.image} width="125" height="125" alt={image.alt} src={image.src} />
       </div>
     );
   }
