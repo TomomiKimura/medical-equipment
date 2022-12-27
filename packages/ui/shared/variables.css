@@ -19,6 +19,10 @@
   --colors-disabled: #e5e6e7;
   --colors-disabled-text: #9ea0a1;
 
+  --colors-icontile-primary: #ffffff;
+  --colors-icontile-text: #414042;
+  --colors-icontile-primary-hover: #e7e5ea;
+
   /* === Border radius === */
   --radius-s: 2px;
   --radius-m: 4px;
@@ -33,6 +37,7 @@
   --space-xl: 24px;
   --space-xxl: 32px;
 
+  /* TODO: Switch to a proper design token system */
   /* === Typography === */
   --font-h1: 48px;
   --font-h2: 32px;

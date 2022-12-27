@@ -1,0 +1,50 @@
+.iconTile {
+  border-radius: var(--radius-m);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-xl);
+
+  height: 310px;
+  width: 230px;
+  padding: 20px;
+
+  cursor: pointer;
+
+  /* TODO: Move this into the design system and standardize it */
+  box-shadow: 0 0 15px 0 #ddd;
+}
+.iconTile:hover {
+  /* TODO: change it so that it grows without altering the layout */
+  box-shadow: 0 0 15px 0 #ccc;
+}
+.imageContainer {
+  height: 125px;
+  width: 125px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.icon {
+  font-size: 86px;
+}
+.textContainer {
+  text-align: center;
+}
+.title {
+  font-size: var(--font-h3);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.description {
+  margin-top: var(--space-m);
+  text-transform: uppercase;
+}
