@@ -1,0 +1,18 @@
+name: Add CodeSandbox link to PR
+
+on:
+  pull_request:
+    types: [opened, reopened]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    steps:
+      - uses: mshick/add-pr-comment@v2
+        with:
+          message: |
+            ## Test environment
+
+            [![CodeSandbox logo](https://raw.githubusercontent.com/${{ github.repository }}/${{ github.head_ref }}/.github/assets/codesandbox.svg)](https://codesandbox.io/p/github/${{ github.repository }}/${{ github.head_ref }})
