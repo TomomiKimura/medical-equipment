@@ -8,16 +8,17 @@
   ],
   "scripts": {
     "build": "turbo run build",
-    "dev": "turbo run dev --parallel",
+    "dev": "npm run clean:kill-servers && turbo run dev --parallel",
+    "fix": "run-s fix:*",
+    "fix:lint": "turbo run verify:lint",
+    "fix:style": "prettier --ignore-unknown --write .",
+    "clean:kill-servers": "./scripts/kill-servers.sh",
+    "pre-commit": "lint-staged",
+    "prepare": "husky install",
     "verify": "run-s verify:*",
-    "verify:types": "turbo run --parallel verify:types",
     "verify:lint": "turbo run --parallel verify:lint",
     "verify:style": "prettier --cache '**/*.{js,jsx,ts,tsx,json,md,yaml,yml}' --check",
-    "fix": "run-s fix:*",
-    "fix:style": "prettier --ignore-unknown --write .",
-    "fix:lint": "turbo run verify:lint",
-    "prepare": "husky install",
-    "pre-commit": "lint-staged"
+    "verify:types": "turbo run --parallel verify:types"
   },
   "devDependencies": {
     "eslint-config-custom": "*",
