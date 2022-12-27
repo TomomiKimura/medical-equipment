@@ -13,4 +13,6 @@ jobs:
       - uses: mshick/add-pr-comment@v2
         with:
           message: |
-            [Test environment](https://codesandbox.io/p/github/${{ github.repository }}/${{ github.head_ref }})
+            ## Test environment
+
+            [![CodeSandbox logo](https://raw.githubusercontent.com/${{ github.repository }}/${{ github.head_ref }}/.github/assets/codesandbox.svg)](https://codesandbox.io/p/github/${{ github.repository }}/${{ github.head_ref }})
