@@ -7,6 +7,6 @@ export default {
 
 export const icon: ComponentStoryObj<typeof Icon> = {
   args: {
-    icon: "chevron-double-left",
+    name: "chevron-double-left",
   },
 };

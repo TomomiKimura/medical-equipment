@@ -1,3 +1,4 @@
+import "ui/shared/reset.css";
 import "ui/shared/global-imports";
 
 export const parameters = {

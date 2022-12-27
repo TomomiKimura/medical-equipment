@@ -44,6 +44,7 @@
   --space-xl: 24px;
   --space-xxl: 32px;
 
+  /* TODO: Switch to a proper design token system */
   /* === Typography === */
   --font-h1: 48px;
   --font-h2: 32px;

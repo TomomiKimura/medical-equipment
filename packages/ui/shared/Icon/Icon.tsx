@@ -1,7 +1,8 @@
 import * as React from "react";
+import type { BootstrapIconName } from "./bootstrap-icons";
 
 export type IconProps = {
-  name: string;
+  name: BootstrapIconName;
 };
 
 export const Icon: React.FC<IconProps> = ({ name }) => {
