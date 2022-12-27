@@ -1,0 +1,29 @@
+name: Check code
+
+on:
+  pull_request:
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out
+        uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          cache: "npm"
+          node-version-file: ".nvmrc"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Check style
+        run: yarn verify:style
+
+      - name: Check quality
+        run: yarn verify:lint
+
+      - name: Check compilation
+        run: yarn verify:types
