@@ -10,6 +10,15 @@
     },
     "dev": {
       "cache": false
+    },
+    "verify:lint": {
+      "outputs": []
+    },
+    "verify:style": {
+      "outputs": []
+    },
+    "verify:types": {
+      "outputs": []
     }
   }
 }

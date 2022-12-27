@@ -3,7 +3,6 @@
 # Webstorm configuration files
 .idea
 
-
 # dependencies
 node_modules
 .pnp
@@ -12,7 +11,7 @@ node_modules
 # testing
 coverage
 
-# next.js
+# Next.js
 .next/
 out/
 build
@@ -35,3 +34,9 @@ yarn-error.log*
 
 # turbo
 .turbo
+
+# ESLint
+.eslintcache
+
+# TypeScript
+tsconfig.tsbuildinfo
