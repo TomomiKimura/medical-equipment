@@ -1,7 +1,7 @@
 import React from "react";
 import { AppProps } from "next/app";
 
-import "ui/shared/reset";
+import "ui/shared/reset.css";
 import "ui/shared/global-imports";
 
 export const WebApp: React.FC<AppProps> = ({ Component, pageProps }) => {
