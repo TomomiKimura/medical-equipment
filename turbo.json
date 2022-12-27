@@ -14,7 +14,11 @@
     "verify:lint": {
       "outputs": []
     },
-    "verify:style": {},
-    "verify:types": {}
+    "verify:style": {
+      "outputs": []
+    },
+    "verify:types": {
+      "outputs": []
+    }
   }
 }
