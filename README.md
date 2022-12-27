@@ -50,6 +50,9 @@ Access the services from these URLs:
 ## File structure
 
 ```
+├── .github                             # GitHub configuration files
+│   └── workflows                        # GitHub Actions' workflow files
+│       └── *.yml                       # Workflow file that configures GitHub Actions to do something under certain conditions
 ├── .husky                              # husky's configuration files
 │   └── pre-commit                      # Script that husky runs before a git commit is made
 ├── apps                                # Contains individual applications
@@ -86,7 +89,7 @@ Access the services from these URLs:
 │       ├── types                       # Contains definition files for UI package
 │       │   └── css-modules.d.ts        # TypeScript definition file that adds types for css modules
 │       └── web                         # Web-specific UI components
-├── .editorconfig                       # Configuration file for IDEs that sets things like amount of spaces, space vs tabs, etc... See: https://editorconfig.org/
+├── .editorconfig                        # Configuration file for IDEs that sets things like amount of spaces, space vs tabs, etc... See: https://editorconfig.org/
 ├── .eslintrc.js                        # ESLint configuration file for the entire repository (medical-equipment)
 ├── .gitignore                          # Configuration file for git to ignore certain files
 ├── .lintstagedrc.json                  # Configuration file for lint-staged. lint-staged lints (checks for errors, format, etc.) files that are going to be committed.
