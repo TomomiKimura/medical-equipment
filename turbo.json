@@ -10,6 +10,11 @@
     },
     "dev": {
       "cache": false
-    }
+    },
+    "verify:lint": {
+      "outputs": []
+    },
+    "verify:style": {},
+    "verify:types": {}
   }
 }

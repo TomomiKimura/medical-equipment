@@ -5,9 +5,10 @@
   "types": "./index.tsx",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint *.ts*",
+    "build-storybook": "build-storybook",
     "dev": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "verify:lint": "eslint --cache '**/*.{ts,tsx}'",
+    "verify:types": "tsc --noEmit"
   },
   "devDependencies": {
     "@babel/core": "^7.19.3",

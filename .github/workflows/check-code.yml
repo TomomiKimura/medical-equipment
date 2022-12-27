@@ -20,10 +20,10 @@ jobs:
         run: npm ci
 
       - name: Check style
-        run: yarn verify:style
+        run: npm run verify:style
 
       - name: Check quality
-        run: yarn verify:lint
+        run: npm run verify:lint
 
       - name: Check compilation
-        run: yarn verify:types
+        run: npm run verify:types
