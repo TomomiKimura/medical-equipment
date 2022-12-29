@@ -1,46 +1,55 @@
+.iconCardContainer {
+  background-color: var(--colors-secondary);
+  height: 190px;
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
+}
 .iconCard {
   background-color: var(--colors-secondary);
   height: 190px;
-  width: 1120px;
-  display: flex;
-  flex-direction: row;
-  padding: 10px;
-  justify-content: space-between;
-}
-.content {
-  background-color: var(--colors-secondary);
-  width: 340px;
+  width: 400px;
+
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+}
+.imageContainer {
+  background-color: var(--colors-secondary);
+  max-width: 340px;
+  padding: 10px;
+
+  display: flex;
+  justify-content: center;
 }
 
 .image {
   background-color: var(--colors-iconcard-text);
-  height: 50px;
-  width: 50px;
-  justify-content: center;
-  margin: auto;
   display: flex;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+.icon {
+  font-size: 86px;
 }
 
+.textContainer {
+  width: 340px;
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
 .title {
-  width: 70%;
-  height: 20%;
   font-weight: bold;
-  justify-content: center;
   display: flex;
-  text-align: center;
-  padding-top: 5px;
+  justify-content: center;
+  margin: 5px 30px;
 }
 
-.description {
-  padding: 8px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  width: 80%;
-}
 .light {
   color: var(--colors-iconcard-text);
 }
