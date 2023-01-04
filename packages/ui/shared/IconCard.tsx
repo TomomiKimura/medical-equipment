@@ -4,8 +4,6 @@ import { ReactNode } from "react";
 import styles from "./IconCard.module.css";
 import { Icon, IconProps } from "./Icon/Icon";
 
-// FIXME: Merge IconTile component or add type BoostrapIconName to Icon component so that I can use type BoostrapIconName(*check IconTile compoment)
-
 export type IconCardProps = {
   theme: "light" | "dark";
   title: string;
