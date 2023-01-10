@@ -1,0 +1,58 @@
+.iconCardContainer {
+  background-color: var(--colors-secondary);
+  height: 190px;
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
+}
+.iconCard {
+  background-color: var(--colors-secondary);
+  height: 190px;
+  width: 400px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.imageContainer {
+  background-color: var(--colors-secondary);
+  max-width: 340px;
+  padding: 10px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  background-color: var(--colors-iconcard-text);
+  display: flex;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+.icon {
+  font-size: 86px;
+}
+
+.textContainer {
+  width: 340px;
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.title {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin: 5px 30px;
+}
+
+.light {
+  color: var(--colors-iconcard-text);
+}
+.dark {
+  color: var(--colors-iconcard-text2);
+}
